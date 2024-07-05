@@ -1,0 +1,63 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: whitesmoke;
+  height: 100vh;
+  width: 100vw;
+}
+
+.centered {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  display: grid;
+  height: 100%;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: 1fr 1fr 2fr 2fr 2fr 1fr;
+}
+
+header {
+  grid-area: 1 / 1 / 2 / 7;
+  margin: auto;
+}
+
+h1 {
+  text-align: center;
+}
+
+nav {
+  grid-area: 2 / 1 / 3 / 7;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-bottom: 1px solid black;
+  border-top: 1px solid black;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+main {
+  grid-area: 3 / 1 / 6 / 5;
+}
+
+aside {
+  grid-area: 3 / 5 / 6 / 8;
+  border-left: 1px solid black;
+}
+
+footer {
+  grid-area: 6 / 1 / 7 / 7;
+  border-top: 1px solid black;
+}
