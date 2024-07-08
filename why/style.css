@@ -58,6 +58,11 @@ main {
   grid-area: 3 / 1 / 6 / 7;
   border: 1px solid black;
   border-radius: 10px;
+  padding: 48px;
+}
+
+.text {
+  text-align: center;
 }
 
 footer {
