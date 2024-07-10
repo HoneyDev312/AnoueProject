@@ -64,13 +64,13 @@ nav {
   background-color: #feca57;
 }
 
-.focus {
-  background-color: #ff9f43;
-}
-
 a {
   text-decoration: none;
   color: #222f3e;
+}
+
+.focus {
+  background-color: #ff9f43;
 }
 
 main {
@@ -114,5 +114,10 @@ aside {
 
 footer {
   grid-area: 6 / 1 / 7 / 7;
+}
+
+.footer-link {
+  width: 100%;
+  height: 100%;
   background-color: #ff9ff3;
 }
