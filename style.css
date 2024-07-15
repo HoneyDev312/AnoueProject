@@ -38,7 +38,7 @@ header {
   border-radius: 10px;
   background-color: #1dd1a1;
 }
-header .hearder__h1 {
+header__h1 {
   font-size: 96px;
   text-align: center;
 }
@@ -50,14 +50,14 @@ header .hearder__h1 {
   grid-template-rows: 1fr;
   gap: 24px;
 }
-.navbar .navbar__item {
+.navbar__item {
   text-align: center;
   background-color: #feca57;
   text-decoration: none;
   color: #222f3e;
   padding: 16px;
 }
-.navbar .navbar__item--focus {
+.navbar__item--focus {
   background-color: #ff9f43;
 }
 
@@ -79,25 +79,25 @@ header .hearder__h1 {
   background-color: #0abde3;
 }
 
-.events .events__item {
+.events__item {
   background-color: #48dbfb;
 }
-.events .events__item--first {
+.events__item--first {
   grid-area: 1/1/2/2;
 }
-.events .events__item--second {
+.events__item--second {
   grid-area: 1/2/2/3;
 }
-.events .events__item--third {
+.events__item--third {
   grid-area: 1/3/2/4;
 }
-.events .events__item--fourth {
+.events__item--fourth {
   grid-area: 2/1/3/2;
 }
-.events .events__item--fifth {
+.events__item--fifth {
   grid-area: 2/2/3/3;
 }
-.events .events__item--sixth {
+.events__item--sixth {
   grid-area: 2/3/3/4;
 }
 
@@ -105,16 +105,16 @@ header .hearder__h1 {
   display: flex;
   flex-direction: column;
 }
-.team .team__label {
+.team__label {
   text-decoration: underline;
 }
-.team .team__line {
+.team__line {
   overflow: auto;
   white-space: nowrap;
   flex: 1;
   padding-bottom: 16px;
 }
-.team .team__line .team__item {
+.team__item {
   display: inline-block;
   height: 100%;
   aspect-ratio: 3/4;
@@ -131,66 +131,63 @@ header .hearder__h1 {
   text-align: center;
   padding: 48px;
 }
-.why .why__name--first {
+.why__name--first {
   grid-area: 1/1/2/2;
 }
-.why .why__name--second {
+.why__name--second {
   grid-area: 1/2/2/3;
 }
-.why .why__name--third {
+.why__name--third {
   grid-area: 1/3/2/4;
 }
-.why .why__name--fourth {
+.why__name--fourth {
   grid-area: 1/4/2/5;
 }
-.why .why__name--fifth {
+.why__name--fifth {
   grid-area: 1/5/2/6;
 }
-.why .why__letter {
+.why__letter {
   font-size: 96px;
   font-weight: bold;
 }
-.why .why__acronym {
+.why__acronym {
   font-size: 20px;
   font-weight: bold;
 }
-.why .why__explaination {
+.why__explaination {
   grid-area: 2/1/3/6;
   margin: auto;
 }
-.why .why__text {
+.why__explaination .why__text {
   font-size: 18px;
 }
 
-.partners .partners__item {
+.partners__item {
   background-color: #48dbfb;
 }
-.partners .partners__item--first {
+.partners__item--first {
   grid-area: 1/1/3/2;
 }
-.partners .partners__item--second {
+.partners__item--second {
   grid-area: 1/2/2/4;
 }
-.partners .partners__item--third {
+.partners__item--third {
   grid-area: 2/2/3/3;
 }
-.partners .partners__item--fourth {
+.partners__item--fourth {
   grid-area: 2/3/3/4;
 }
 
 .albums {
   display: flex;
-  flex-direction: column;
   padding-top: 16px;
 }
-
 .albums__line {
   overflow: auto;
   white-space: nowrap;
   flex: 1;
   padding-bottom: 16px;
 }
-
 .albums__item {
   display: inline-block;
   height: 100%;
@@ -214,6 +211,6 @@ footer .footer__link {
   text-decoration: none;
   color: #222f3e;
 }
-footer .footer__h2 {
+footer__h2 {
   font-size: 36px;
 }/*# sourceMappingURL=style.css.map */
