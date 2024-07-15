@@ -1,0 +1,255 @@
+//RESET
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+//GLOBAL LAYOUT
+
+body {
+  height: 100vh;
+  width: 100vw;
+  padding: 48px;
+  color: #222f3e;
+  background-color: #c8d6e5;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='28' height='49' viewBox='0 0 28 49'%3E%3Cg fill-rule='evenodd'%3E%3Cg id='hexagons' fill='%238395a7' fill-opacity='0.4' fill-rule='nonzero'%3E%3Cpath d='M13.99 9.25l13 7.5v15l-13 7.5L1 31.75v-15l12.99-7.5zM3 17.9v12.7l10.99 6.34 11-6.35V17.9l-11-6.34L3 17.9zM0 15l12.98-7.5V0h-2v6.35L0 12.69v2.3zm0 18.5L12.98 41v8h-2v-6.85L0 35.81v-2.3zM15 0v7.5L27.99 15H28v-2.31h-.01L17 6.35V0h-2zm0 49v-8l12.99-7.5H28v2.31h-.01L17 42.15V49h-2z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+
+.container {
+  display: grid;
+  height: 100%;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: 1fr 1fr 2fr 2fr 2fr 1fr;
+  gap: 24px;
+}
+
+//COMMON
+
+.card {
+  border: 1px solid #222f3e;
+  border-radius: 10px;
+  box-shadow: 6px 6px 0px #222f3e;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+//HEADER
+
+header {
+  grid-area: 1 / 1 / 2 / 7;
+  border: 1px solid #222f3e;
+  border-radius: 10px;
+  background-color: #1dd1a1;
+
+  .hearder__h1 {
+    font-size: 96px;
+    text-align: center;
+  }
+}
+
+//NAVIGATION BAR
+
+.navbar {
+  grid-area: 2 / 1 / 3 / 7;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: 1fr;
+  gap: 24px;
+  .navbar__item {
+    text-align: center;
+    background-color: #feca57;
+    text-decoration: none;
+    color: #222f3e;
+    padding: 16px;
+    &--focus {
+      background-color: #ff9f43;
+    }
+  }
+}
+
+//MAIN
+
+.main {
+  grid-area: 3 / 1 / 6 / 7;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 24px;
+}
+
+//HOME
+
+.home__main {
+  grid-area: 1 / 1 / 3 / 3;
+  background-color: #48dbfb;
+}
+
+.home__secondary {
+  grid-area: 1 / 3 / 3 / 4;
+  background-color: #0abde3;
+}
+
+//EVENTS
+
+.events {
+  .events__item {
+    background-color: #48dbfb;
+    &--first {
+      grid-area: 1 / 1 / 2 / 2;
+    }
+    &--second {
+      grid-area: 1 / 2 / 2 / 3;
+    }
+    &--third {
+      grid-area: 1 / 3 / 2 / 4;
+    }
+    &--fourth {
+      grid-area: 2 / 1 / 3 / 2;
+    }
+    &--fifth {
+      grid-area: 2 / 2 / 3 / 3;
+    }
+    &--sixth {
+      grid-area: 2 / 3 / 3 / 4;
+    }
+  }
+}
+
+//TEAM
+
+.team {
+  display: flex;
+  flex-direction: column;
+  .team__label {
+    text-decoration: underline;
+  }
+  .team__line {
+    overflow: auto;
+    white-space: nowrap;
+    flex: 1;
+    padding-bottom: 16px;
+    .team__item {
+      display: inline-block;
+      height: 100%;
+      aspect-ratio: 3/4;
+      margin-right: 16px;
+      background-color: #48dbfb;
+    }
+  }
+}
+
+//WHY
+
+.why {
+  grid-area: 1 / 1 / 3 / 4;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  background-color: #48dbfb;
+  text-align: center;
+  padding: 48px;
+
+  .why__name {
+    &--first {
+      grid-area: 1 / 1 / 2 / 2;
+    }
+    &--second {
+      grid-area: 1 / 2 / 2 / 3;
+    }
+    &--third {
+      grid-area: 1 / 3 / 2 / 4;
+    }
+    &--fourth {
+      grid-area: 1 / 4 / 2 / 5;
+    }
+    &--fifth {
+      grid-area: 1 / 5 / 2 / 6;
+    }
+    .why__letter {
+      font-size: 96px;
+      font-weight: bold;
+    }
+    .why__acronym {
+      font-size: 20px;
+      font-weight: bold;
+    }
+  }
+
+  .why__explaination {
+    grid-area: 2 / 1 / 3 / 6;
+    margin: auto;
+    .why__text {
+      font-size: 18px;
+    }
+  }
+}
+
+//PARTNERS
+
+.partners {
+  .partners__item {
+    background-color: #48dbfb;
+    &--first {
+      grid-area: 1 / 1 / 3 / 2;
+    }
+    &--second {
+      grid-area: 1 / 2 / 2 / 4;
+    }
+
+    &--third {
+      grid-area: 2 / 2 / 3 / 3;
+    }
+
+    &--fourth {
+      grid-area: 2 / 3 / 3 / 4;
+    }
+  }
+}
+
+//ALBUMS
+
+.albums {
+  display: flex;
+  padding-top: 16px;
+  .albums__line {
+    overflow: auto;
+    white-space: nowrap;
+    flex: 1;
+    padding-bottom: 16px;
+    .albums__item {
+      display: inline-block;
+      height: 100%;
+      width: 500px;
+      margin-left: 24px;
+      margin-right: 24px;
+      background-color: #48dbfb;
+    }
+  }
+}
+
+//CONTACT
+
+.contact {
+  background-color: #48dbfb;
+}
+
+//FOOTER
+
+footer {
+  grid-area: 6 / 1 / 7 / 7;
+  .footer__link {
+    width: 100%;
+    height: 100%;
+    background-color: #feca57;
+    text-decoration: none;
+    color: #222f3e;
+  }
+  .footer__h2 {
+    font-size: 36px;
+  }
+}
