@@ -23,7 +23,7 @@ body {
   gap: 24px;
 }
 
-header {
+.header {
   grid-area: 1/1/2/7;
   border-radius: 10px;
   background-color: #1dd1a1;
@@ -34,7 +34,7 @@ header {
   justify-content: center;
   align-items: center;
 }
-header__h1 {
+.header__h1 {
   font-size: 96px;
   text-align: center;
 }
@@ -235,6 +235,12 @@ header__h1 {
 
 .contact {
   background-color: #48dbfb;
+  border: 1px solid #222f3e;
+  border-radius: 10px;
+  box-shadow: 6px 6px 0px #222f3e;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .footer {

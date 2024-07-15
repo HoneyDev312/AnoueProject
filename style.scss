@@ -62,12 +62,13 @@ body {
 
 //HEADER
 
-header {
+.header {
   grid-area: 1 / 1 / 2 / 7;
   border-radius: 10px;
   background-color: $header-color;
   @include card;
   @include flex-centered;
+
   &__h1 {
     font-size: 96px;
     text-align: center;
@@ -277,6 +278,8 @@ header {
 
 .contact {
   background-color: $main-color;
+  @include card;
+  @include flex-centered;
 }
 
 //FOOTER
