@@ -97,10 +97,17 @@ body {
     color: $text-color;
     padding: 16px;
     @include card;
-    @include flex-centered;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
 
     &--focus {
       background-color: $action-focus-color;
+    }
+
+    &--icon {
+      font-size: 24px;
     }
   }
 }
@@ -300,7 +307,12 @@ body {
     text-decoration: none;
     color: $text-color;
     @include card;
-    @include flex-centered;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    &--icon {
+      font-size: 40px;
+    }
   }
   &__h2 {
     font-size: 36px;

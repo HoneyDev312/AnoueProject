@@ -62,11 +62,15 @@ body {
   border-radius: 10px;
   box-shadow: 6px 6px 0px #222f3e;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
+  flex-direction: column;
 }
 .navbar__item--focus {
   background-color: #ff9f43;
+}
+.navbar__item--icon {
+  font-size: 24px;
 }
 
 .main {
@@ -262,8 +266,11 @@ body {
   border-radius: 10px;
   box-shadow: 6px 6px 0px #222f3e;
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: space-around;
+}
+.footer__link--icon {
+  font-size: 40px;
 }
 .footer__h2 {
   font-size: 36px;
