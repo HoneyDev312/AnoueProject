@@ -102,8 +102,13 @@ body {
     align-items: center;
     flex-direction: column;
 
+    &:hover {
+      background-color: lighten($action-color, 10%);
+    }
+
     &--focus {
       background-color: $action-focus-color;
+      pointer-events: none;
     }
 
     &--icon {
@@ -313,7 +318,11 @@ body {
     &--icon {
       font-size: 40px;
     }
+    &:hover {
+      background-color: lighten($action-color, 10%);
+    }
   }
+
   &__h2 {
     font-size: 36px;
   }
