@@ -66,8 +66,12 @@ body {
   align-items: center;
   flex-direction: column;
 }
+.navbar__item:hover {
+  background-color: #feda8a;
+}
 .navbar__item--focus {
   background-color: #ff9f43;
+  pointer-events: none;
 }
 .navbar__item--icon {
   font-size: 24px;
@@ -271,6 +275,9 @@ body {
 }
 .footer__link--icon {
   font-size: 40px;
+}
+.footer__link:hover {
+  background-color: #feda8a;
 }
 .footer__h2 {
   font-size: 36px;
